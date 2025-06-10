@@ -12,6 +12,8 @@ Theme::registerRoutes(function (): void {
     Route::group(['controller' => PublicController::class], function (): void {
         event(new ThemeRoutingBeforeEvent(app()->make('router')));
 
+        Route::get('/berita', 'getIndex')->name('public.index');
+
         Route::get('{key}.{extension}', 'getSiteMapIndex')
             ->where('key', '^' . collect(SiteMapManager::getKeys())->map(fn ($item) => '(?:' . $item . ')')->implode('|') . '$')
             ->whereIn('extension', SiteMapManager::allowedExtensions())
