@@ -128,7 +128,8 @@
                   <div class="flex flex-row ">
                       <div class="w-full mb-4 xl:mb-0">
                           <div class="text-left">
-                              <h3 class="text-xl text-yellow-500 font-medium uppercase tracking-widest">Tujuan Dan Sasaran</h3>
+                              <h3 class="text-xl text-yellow-500 font-medium uppercase tracking-widest">Tujuan Dan
+                                  Sasaran</h3>
                               <h6 class="text-4xl font-semibold text-black">Rencana Pembangunan Daerah Probolinggo
                                   2024-2026</h6>
                           </div>
@@ -419,127 +420,50 @@
               <!-- Featured News Cards -->
               <div class="w-full xl:w-4/12 mb-8 xl:mb-0 xl:pr-4">
                   <div class="space-y-6">
-                      <!-- First Featured Card -->
-                      <div class="w-full">
-                          <a href="https://malangkota.go.id/?p=55025" class="block">
-                              <div class="news-card h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-                                  style="background-image: url('https://malangkota.go.id/wp-content/uploads/2025/06/Meninjau-Gedung-SPPG.jpeg');">
-                                  <div class="news-card-content h-full flex flex-col justify-end p-4">
-                                      <p class="text-white text-lg font-bold leading-tight mb-2">
-                                          Wali Kota Malang Tinjau Progres Pembangunan Gedung SPPG Tlogowaru
-                                      </p>
-                                      <div class="link-btn-2 text-white">
-                                          <i class="far fa-arrow-right mr-1"></i>
-                                          <i class="far fa-arrow-right"></i>
+                      @foreach ($latestPosts->take(2) as $post)
+                          <div class="w-full">
+                              <a href="{{ $post->url }}" class="block">
+                                  <div class="news-card h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                      style="background-image: url('storage/{{ $post->image ?? 'https://via.placeholder.com/600x400?text=No+Image' }}');">
+                                      <div class="news-card-content h-full flex flex-col justify-end p-4">
+                                          <p class="text-white text-lg font-bold leading-tight mb-2">
+                                              {{ $post->name ?? '-' }}
+                                          </p>
+                                          <div class="link-btn-2 text-white">
+                                              <i class="far fa-arrow-right mr-1"></i>
+                                              <i class="far fa-arrow-right"></i>
+                                          </div>
                                       </div>
                                   </div>
-                              </div>
-                          </a>
-                      </div>
-
-                      <!-- Second Featured Card -->
-                      <div class="w-full">
-                          <a href="https://malangkota.go.id/?p=55019" class="block">
-                              <div class="news-card h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-                                  style="background-image: url('https://malangkota.go.id/wp-content/uploads/2025/06/Rilis-BRS-BPS-Kota-Malang.jpeg');">
-                                  <div class="news-card-content h-full flex flex-col justify-end p-4">
-                                      <p class="text-white text-lg font-bold leading-tight mb-2">
-                                          Turunnya Harga Bahan Pokok Picu Deflasi di Kota Malang
-                                      </p>
-                                      <div class="link-btn-2 text-white">
-                                          <i class="far fa-arrow-right mr-1"></i>
-                                          <i class="far fa-arrow-right"></i>
-                                      </div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
+                              </a>
+                          </div>
+                      @endforeach
                   </div>
               </div>
 
               <!-- News List -->
               <div class="w-full md:w-6/12 xl:w-5/12 mb-8 md:mb-0 xl:px-4 ">
                   <div class="space-y-6">
-                      <!-- News Item 1 -->
-                      <div class="border-b border-gray-200 pb-4">
-                          <a href="https://malangkota.go.id/?p=55010" class="block group">
-                              <h4
-                                  class="text-md font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 mb-2">
-                                  Wali Kota Malang Tegaskan Pentingnya Penghayatan dan Pengamalan Nilai Pancasila
-                              </h4>
-                              <span class="text-sm text-gray-500 block mb-2">2025-06-02 17:09:42</span>
-                              <div class="flex flex-wrap gap-2">
+                      @foreach ($latestPosts->skip(2)->take(4) as $post)
+                          <div class="border-b border-gray-200 pb-4">
+                              <a href="{{ $post->url ?? '#' }}" class="block group">
+                                  <h4
+                                      class="text-md font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 mb-2">
+                                      {{ $post->title ?? '-' }}
+                                  </h4>
                                   <span
-                                      class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">BERITA</span>
-                                  <span
-                                      class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">HUKUM</span>
-                                  <span
-                                      class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">POLITIK</span>
-                                  <span class="px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">DAN
-                                      PEMERINTAHAN</span>
-                              </div>
-                          </a>
-                      </div>
-
-                      <!-- News Item 2 -->
-                      <div class="border-b border-gray-200 pb-4">
-                          <a href="https://malangkota.go.id/?p=55006" class="block group">
-                              <h4
-                                  class="text-md font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 mb-2">
-                                  Wali Kota Malang Kukuhkan Pelaksana DPPI Kota Malang 2025-2029
-                              </h4>
-                              <span class="text-sm text-gray-500 block mb-2">2025-06-02 16:47:05</span>
-                              <div class="flex flex-wrap gap-2">
-                                  <span
-                                      class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">BERITA</span>
-                                  <span
-                                      class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">HUKUM</span>
-                                  <span
-                                      class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">POLITIK</span>
-                                  <span class="px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">DAN
-                                      PEMERINTAHAN</span>
-                              </div>
-                          </a>
-                      </div>
-
-                      <!-- News Item 3 -->
-                      <div class="border-b border-gray-200 pb-4">
-                          <a href="https://malangkota.go.id/?p=55014" class="block group">
-                              <h4
-                                  class="text-md font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 mb-2">
-                                  Dikukuhkan, Ini Pesan Wali Kota Malang Untuk DPPI Kota Malang
-                              </h4>
-                              <span class="text-sm text-gray-500 block mb-2">2025-06-02 16:35:34</span>
-                              <div class="flex flex-wrap gap-2">
-                                  <span
-                                      class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">BERITA</span>
-                                  <span
-                                      class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">HUKUM</span>
-                                  <span
-                                      class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">POLITIK</span>
-                                  <span class="px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">DAN
-                                      PEMERINTAHAN</span>
-                              </div>
-                          </a>
-                      </div>
-
-                      <!-- News Item 4 -->
-                      <div class="border-b border-gray-200 pb-4">
-                          <a href="https://malangkota.go.id/?p=55022" class="block group">
-                              <h4
-                                  class="text-md font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 mb-2">
-                                  Wawali Ali Tekankan Pentingnya Pendidikan dalam Merawat Kebinekaan
-                              </h4>
-                              <span class="text-sm text-gray-500 block mb-2">2025-06-02 16:09:06</span>
-                              <div class="flex flex-wrap gap-2">
-                                  <span
-                                      class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">BERITA</span>
-                                  <span
-                                      class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded">PENDIDIKAN</span>
-                              </div>
-                          </a>
-                      </div>
-
+                                      class="text-sm text-gray-500 block mb-2">{{ $post->created_at ? $post->created_at->format('Y-m-d H:i:s') : '' }}</span>
+                                  <div class="flex flex-wrap gap-2">
+                                      @if (!empty($post->categories))
+                                          @foreach ($post->categories as $cat)
+                                              <span
+                                                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">{{ $cat->name }}</span>
+                                          @endforeach
+                                      @endif
+                                  </div>
+                              </a>
+                          </div>
+                      @endforeach
                   </div>
               </div>
 

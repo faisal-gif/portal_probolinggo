@@ -28,8 +28,17 @@ class UltraNewsController extends PublicController
 
     public function index()
     {
+        $latestPosts = app(PostInterface::class)->advancedGet([
+            'condition' => [
+                'posts.status' => BaseStatusEnum::PUBLISHED,
+            ],
+            'order_by' => ['created_at' => 'DESC'],
+            'take' => 6, // Ambil 6 berita terbaru
+            'with' => ['categories'], // Sertakan relasi kategori
+        ]);
 
-        return Theme::scope('index')->render();
+
+        return Theme::scope('index', compact('latestPosts'))->render();
     }
 
     public function getNew()

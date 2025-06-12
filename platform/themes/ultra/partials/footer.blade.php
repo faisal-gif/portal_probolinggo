@@ -4,38 +4,81 @@
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="col-lg-3 col-md-6 mb-lg-0 mb-30">
-                    <h5 class="fw-semibold mb-2" style="color: #dae4d9">Pemerintah Probolinggo</h5>
-                    <p style="color: #dae4d9">
-                        Balaikota Probolinggo<br>
-                        Tisnonegaran, Kec. Kanigaran, Kota Probolinggo
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-30">
-                    <h5 class="fw-semibold mb-2" style="color: #dae4d9">Kontak</h5>
-                    <p style="color: #dae4d9">bag-umum@probolinggo.go.id</p>
-                    <p style="color: #dae4d9">(0341) 366065</p>
-                    <h5 class="fw-semibold mb-2 mt-4" style="color: #dae4d9">Media Sosial</h5>
-                    <div class="" style="color: #dae4d9">
-                        <a href="#" class="text-decoration-none">YouTube</a>
-                        <a href="#" class="text-decoration-none">Facebook</a>
-                        <a href="#" class="text-decoration-none">Instagram</a>
-                        <a href="#" class="text-decoration-none">X</a>
-                        <a href="#" class="text-decoration-none">TikTok</a>
+                    <h3 class="h5 fw-bold mb-3 d-flex align-items-center">
+                        <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="Lambang Probolinggo" class="mx-2" style="height: 40px;">
+                        PROBOLINGGO
+                    </h3>
+                    <p class="text-light small">Portal resmi Pemerintah Kabupaten Probolinggo sebagai media informasi
+                        dan pelayanan publik yang transparan dan akuntabel.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="text-light text-decoration-none mx-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none mx-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-30">
+                    <h3 class="h6 fw-bold mb-3 pb-2 border-bottom border-secondary">Tautan Cepat</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Profil
+                                Kabupaten</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Struktur
+                                Organisasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Peraturan
+                                Daerah</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Anggaran
+                                Daerah</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">PPID</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">LPSE</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-30">
+                    <h3 class="h6 fw-bold mb-3 pb-2 border-bottom border-secondary">Layanan Publik</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Pelayanan
+                                Kesehatan</a></li>
+                        <li class="mb-2"><a href="#"
+                                class="text-light text-decoration-none small">Pendidikan</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Perizinan</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-light text-decoration-none small">Kependudukan</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Bantuan
+                                Sosial</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none small">Pengaduan</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-semibold mb-2" style="color: #dae4d9">Pemerintahan</h5>
-                    <ul class="list-unstyled" style="color: #dae4d9">
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Eksekutif</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Legislatif</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Forkopimda</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Badan</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Dinas</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Bagian</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">Kecamatan dan Kelurahan</a></li>
-                        <li><a href="#" class="text-decoration-none d-block mb-1">RSUD Probolinggo</a></li>
+                    <h3 class="h6 fw-bold mb-3 pb-2 border-bottom border-secondary">Kontak</h3>
+                    <ul class="list-unstyled small">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt text-warning mt-1 mx-2"></i>
+                            <span class="text-light">Jl. Panglima Sudirman No. 235, Probolinggo 67222, Jawa Timur</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-phone-alt text-warning mx-2"></i>
+                            <span class="text-light">(0335) 422433</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-envelope text-warning mx-2"></i>
+                            <span class="text-light">info@probolinggokab.go.id</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-clock text-warning mx-2"></i>
+                            <span class="text-light">Senin - Jumat, 08.00 - 16.00 WIB</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +92,7 @@
                 <div class="row d-flex align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <div class="footer-copy-right">
-                            <p class="font-medium">
+                            <p class="font-medium text-light">
                                 {!! clean(theme_option('copyright')) !!} {!! clean(theme_option('designed_by')) !!}
                             </p>
                         </div>

@@ -17,7 +17,8 @@ class LoginController extends BaseController
 {
     use AuthenticatesUsers;
 
-    protected string $redirectTo = '/';
+    protected string $redirectTo = '/account/dashboard';
+    protected string $redirectAfterLogout = '/berita';
 
     public function __construct()
     {
@@ -97,7 +98,6 @@ class LoginController extends BaseController
         $request->session()->invalidate();
 
         return $this->httpResponse()
-            ->setNextRoute('access.login')
-            ->setMessage(trans('core/acl::auth.login.logout_success'));
+            ->setNextUrl($this->redirectAfterLogout);
     }
 }
