@@ -65,9 +65,6 @@
                             {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \Botble\Member\Models\Member::class) !!}
                         </div>
 
-                        <div class="text-muted text-center">{{ __("Don't have an account?") }}
-                            <a href="{{ route('public.member.register') }}">{{ __('Sign up now') }}</a>
-                        </div>
                     </div>
                 </div>
             </div>
