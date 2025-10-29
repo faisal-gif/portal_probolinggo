@@ -67,7 +67,7 @@
         </nav>
 
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="{{ asset('./Jejak_Cerita_Probolinggo.mp4') }}" type="video/mp4" />
+            <source src="{{ asset('./video_probolinggo.mp4') }}" type="video/mp4" />
         </video>
 
         <div class="absolute inset-0 bg-black/40 z-10"></div>
