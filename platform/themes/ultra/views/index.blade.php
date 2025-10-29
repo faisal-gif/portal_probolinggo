@@ -78,7 +78,7 @@
                               Visi Kabupaten
                           </h4>
                           <p class="pl-7 italic">
-                              "Kabupaten Probolinggo yang Tentram, Gemah Ripah, Loh Jinawi"
+                             “Terwujudnya Kabupaten Probolinggo yang Sejahtera, Berkeadilan, Mandiri, Berwawasan Lingkungan dan Berakhlak Mulia.”
                           </p>
                       </div>
 
@@ -90,19 +90,11 @@
                           <ul class="space-y-3 pl-7">
                               <li class="flex items-start">
                                   <span class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                  Meningkatkan kesejahteraan masyarakat
+                                 Mewujudkan kesejahteraan masyarakat melalui peningkatan daya saing daerah, pertumbuhan ekonomi berbasis kerakyatan, dan optimalisasi pengelolaan sumber daya yang berkelanjutan;
                               </li>
                               <li class="flex items-start">
                                   <span class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                  Memajukan pembangunan berkelanjutan
-                              </li>
-                              <li class="flex items-start">
-                                  <span class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                  Meningkatkan pelayanan publik
-                              </li>
-                              <li class="flex items-start">
-                                  <span class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                  Melestarikan nilai-nilai budaya
+                                 Mewujudkan masyarakat yang berakhlak mulia melalui peningkatan kualitas pelaksanaan Otonomi Daerah dalam penyelenggaraan kepemerintahan yang baik dan bersih.
                               </li>
                           </ul>
                       </div>

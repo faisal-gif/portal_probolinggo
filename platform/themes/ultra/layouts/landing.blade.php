@@ -48,7 +48,7 @@
                             <li><a href="#wisata">Destinasi Wisata</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">
+                    <a class="btn btn-ghost text-xl text-center">
                         <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="Logo Kabupaten Probolinggo"
                             class="h-8" alt="">
                     </a>
