@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portal Probolinggo</title>
+    <title>Portal Kabupaten Probolinggo</title>
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
@@ -74,8 +74,8 @@
 
         <div class="relative z-10 flex flex-col justify-end text-white h-full py-20 px-8">
             <div class="md:w-1/2" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di <span
-                        class="text-[#e9c46a]">Probolinggo</span></h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di <br>
+                    <span class="text-[#e9c46a]">Kabupaten Probolinggo</span></h1>
                 <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="200">Kota yang kaya akan budaya, sejarah, dan
                     potensi ekonomi di Jawa Timur.</p>
                 <div class="flex space-x-4" data-aos="fade-up" data-aos-delay="400">
@@ -192,7 +192,7 @@
         </a>
         <a data-aos="fade-up" data-aos-delay="100" href="#"
             class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition">
-            <i class="fab fa-whatsapp"></i>
+           <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
 

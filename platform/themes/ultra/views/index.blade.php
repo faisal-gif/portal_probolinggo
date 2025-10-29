@@ -110,7 +110,7 @@
 
                   <!-- Floating Image -->
                   <div data-aos="zoom-in-up" data-aos-delay="200"
-                      class="hidden lg:block absolute -bottom-10 -right-10 w-48 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-20 transform rotate-6">
+                      class="hidden lg:block absolute -bottom-10 -right-1 w-48 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-20 transform rotate-6">
                       <img src="https://statik.tempo.co/data/2019/05/21/id_843378/843378_720.jpg"
                           alt="Probolinggo Landscape" class="w-full h-full object-cover">
                   </div>
@@ -712,7 +712,7 @@
               <div class="lg:w-1/2" data-aos="fade-left">
                   <div class="relative pt-[56.25%] rounded-lg overflow-hidden shadow-xl">
                       <iframe class="absolute top-0 left-0 w-full h-full"
-                          src="https://www.youtube.com/embed/w2JOG9mbCiI" frameborder="0"
+                          src="https://www.youtube.com/embed/G8PKu6-Zaj0" frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowfullscreen></iframe>
                   </div>
