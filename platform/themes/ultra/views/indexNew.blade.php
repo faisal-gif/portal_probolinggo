@@ -104,11 +104,7 @@
                   </div>
 
                   <!-- Floating Image -->
-                  <div
-                      class="absolute -bottom-10 -right-4 w-32 h-64 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-20 transform rotate-6">
-                      <img src="https://statik.tempo.co/data/2019/05/21/id_843378/843378_720.jpg"
-                          alt="Probolinggo Landscape" class="w-full h-full object-cover">
-                  </div>
+                  
               </div>
           </div>
       </div>
