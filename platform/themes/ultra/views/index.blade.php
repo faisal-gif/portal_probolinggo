@@ -63,7 +63,7 @@
               </div>
 
               <!-- Visi Misi Card -->
-              <div class="relative" data-aos="fade-left" data-aos-duration="800">
+              <div class="relative" data-aos="fade-down" data-aos-duration="800">
                   <div class="bg-gradient-to-br from-[#324d3e] to-[#738a6e] rounded-2xl p-8 text-white shadow-xl">
                       <div
                           class="absolute -top-4 -left-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg">
@@ -138,7 +138,7 @@
           <!-- Leadership Grid -->
           <div class="grid md:grid-cols-2 gap-12 mb-16">
               <!-- Bupati -->
-              <div data-aos="fade-right" data-aos-duration="800"
+              <div data-aos="fade-up" data-aos-duration="800"
                   class="bg-white rounded-2xl shadow-xl p-8 border-l-4 border-[#324d3e] transform hover:scale-105 transition-all duration-300">
                   <div class="text-center">
                       <!-- Photo Placeholder -->
@@ -168,7 +168,7 @@
               </div>
 
               <!-- Wakil Bupati -->
-              <div data-aos="fade-left" data-aos-duration="800"
+              <div data-aos="fade-down" data-aos-duration="800"
                   class="bg-white rounded-2xl shadow-xl p-8 border-l-4 border-gray-600 transform hover:scale-105 transition-all duration-300">
                   <div class="text-center">
                       <!-- Photo Placeholder -->
@@ -379,7 +379,7 @@
                       </details>
                   </div>
               </div>
-              <div class="w-1/2 mt-8 hidden lg:block xl:mt-0" data-aos="fade-left" data-aos-delay="400">
+              <div class="w-1/2 mt-8 hidden lg:block xl:mt-0" data-aos="fade-up" data-aos-delay="400">
                   <div class="relative">
                       <img src="https://image.idntimes.com/post/20230612/whatsapp-image-2023-06-12-at-215655-b69131d0e63c1e8764173f4db6e9487c-c72ecbeb1464aa08a5266bd9cd72f81f.jpeg?tr=w-1920,f-webp,q-75&width=1920&format=webp&quality=75"
                           alt="Balai Kota Malang" class="rounded-lg  h-[500px] w-full object-cover shadow-lg">
@@ -677,14 +677,14 @@
               </div>
 
               <!-- Widget Area -->
-              <div class="w-full md:w-6/12 xl:w-3/12 xl:pl-4" data-aos="fade-left" data-aos-delay="200">
+              {{-- <div class="w-full md:w-6/12 xl:w-3/12 xl:pl-4" data-aos="fade-left" data-aos-delay="200">
                   <div class="bg-gray-100 rounded-lg p-6 h-full">
                       <div id="gpr-kominfo-widget-container" class="text-center text-gray-500">
                           <!-- Widget content would go here -->
                           <p>Widget Area</p>
                       </div>
                   </div>
-              </div>
+              </div> --}}
           </div>
       </div>
   </section>
@@ -693,7 +693,7 @@
   <section class="py-12 text-[#dae4d9]">
       <div class="container mx-auto px-4">
           <div class="flex flex-col lg:flex-row items-center">
-              <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12" data-aos="fade-right">
+              <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12" data-aos="fade-down">
                   <h2 class="text-3xl font-bold mb-4">Video Profil Kabupaten Probolinggo</h2>
                   <p class="text-lg mb-6">Saksikan keindahan dan potensi Kabupaten Probolinggo melalui video profil
                       kami. Temukan berbagai destinasi wisata, budaya, dan potensi ekonomi yang menjadi kebanggaan
@@ -709,7 +709,7 @@
                       </a>
                   </div>
               </div>
-              <div class="lg:w-1/2" data-aos="fade-left">
+              <div class="lg:w-1/2" data-aos="fade-up">
                   <div class="relative pt-[56.25%] rounded-lg overflow-hidden shadow-xl">
                       <iframe class="absolute top-0 left-0 w-full h-full"
                           src="https://www.youtube.com/embed/G8PKu6-Zaj0" frameborder="0"
